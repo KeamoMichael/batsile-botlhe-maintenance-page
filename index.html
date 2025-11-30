@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batsile Botlhe - Under Maintenance</title>
+    <link rel="icon" href="assets/Batsile Favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/contact.js" defer></script>
+</head>
+<body>
+    <img src="assets/Batsile Botlhe_Website Logo.png" alt="Batsile Botlhe Logo" class="logo">
+    <div class="container">
+        <div class="status-pill">
+            <img src="assets/setting (white).png" alt="Settings Icon" class="status-icon">
+            <span class="pill-text">Site Under Maintenance</span>
+        </div>
+        <h1>Our Website is Under Maintenance</h1>
+        <p>We are currently working on making some improvements to our website. We'll be back soon!</p>
+        <button id="contactBtn" class="contact-btn">
+            <span class="btn-text">
+                <span class="btn-text-inner">Contact Us</span>
+                <span class="btn-text-inner">Contact Us</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get In Touch</h2>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="New Contact Form Submission from Batsile Botlhe">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">
+                        <span class="btn-text-inner">Send Message</span>
+                        <span class="btn-text-inner">Send Message</span>
+                    </span>
+                </button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
